@@ -10,7 +10,7 @@ const Page = () => {
       </h1>
 
       <div>
-        <div className='flex justify-center align-middle sm:w-[600px] sm:h-14 w-[300px] h-8 bg-background rounded-full border border-border pl-3'>
+        {/* <div className='flex justify-center align-middle sm:w-[600px] sm:h-14 w-[300px] h-8 bg-background rounded-full border border-border pl-3'>
           <input
             type='text'
             placeholder='Please enter your email address'
@@ -19,7 +19,19 @@ const Page = () => {
           <button className='sm:w-48 w-20 sm:text-xl text-xs bg-primary rounded-full border border-border flex items-center justify-center text-text cursor-pointer hover:bg-secondary'>
             Notify
           </button>
+        </div> */}
+
+        <div className='flex justify-center align-middle sm:w-[600px] sm:h-14 w-[300px] h-8 bg-background rounded-full border border-border pl-3 shadow-[0_0_15px_5px_rgba(0,0,0,0.2),0_0_30px_8px_rgba(0,0,0,0.4)] ring-2 ring-primary ring-offset-1 ring-offset-background transition duration-150 ease-out'>
+          <input
+            type='text'
+            placeholder='Please enter your email address'
+            className='flex-1 overflow-hidden bg-transparent outline-none p-4 text-text sm:text-xl text-xs'
+          />
+          <button className='sm:w-48 w-20 sm:text-xl text-xs bg-primary rounded-full border border-border flex items-center justify-center text-text cursor-pointer transition duration-300 ease-out hover:bg-secondary'>
+            Notify
+          </button>
         </div>
+
         <p className='text-text text-l text-center mt-3 sm:text-[18px] text-xs'>
           Notify me when app launches
         </p>
