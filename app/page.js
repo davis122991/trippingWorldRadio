@@ -1,41 +1,33 @@
 const Page = () => {
   return (
-    <div className='flex sm:gap-10 gap-6 flex-col items-center mt-5'>
-      <div className='md:h-48 md:w-48 h-28 w-28 rounded-full bg-gray-500 flex items-center justify-center'>
-        <span>Logo</span>
-      </div>
-
-      <h1 className='text-text sm:text-6xl text-2xl font-bold tracking-widest text-center'>
-        COMMING SOON
-      </h1>
-
-      <div>
-        {/* <div className='flex justify-center align-middle sm:w-[600px] sm:h-14 w-[300px] h-8 bg-background rounded-full border border-border pl-3'>
-          <input
-            type='text'
-            placeholder='Please enter your email address'
-            className='flex-1 overflow-hidden bg-transparent outline-none p-4 text-text sm:text-xl text-xs'
-          />
-          <button className='sm:w-48 w-20 sm:text-xl text-xs bg-primary rounded-full border border-border flex items-center justify-center text-text cursor-pointer hover:bg-secondary'>
-            Notify
-          </button>
-        </div> */}
-
-        <div className='flex justify-center align-middle sm:w-[600px] sm:h-14 w-[300px] h-8 bg-background rounded-full border border-border pl-3 shadow-[0_0_15px_5px_rgba(0,0,0,0.2),0_0_30px_8px_rgba(0,0,0,0.4)] ring-2 ring-primary ring-offset-1 ring-offset-background transition duration-150 ease-out'>
-          <input
-            type='text'
-            placeholder='Please enter your email address'
-            className='flex-1 overflow-hidden bg-transparent outline-none p-4 text-text sm:text-xl text-xs'
-          />
-          <button className='sm:w-48 w-20 sm:text-xl text-xs bg-primary rounded-full border border-border flex items-center justify-center text-text cursor-pointer transition duration-300 ease-out hover:bg-secondary'>
-            Notify
-          </button>
-        </div>
-
-        <p className='text-text text-l text-center mt-3 sm:text-[18px] text-xs'>
-          Notify me when app launches
+    <div className='flex flex-col justify-center items-center gap-2'>
+      <h3 className='uppercase text-3xl md:text-5xl text-center font-bold tracking-wider'>
+        Tune into the music soon
+      </h3>
+      {/* <div className='mt-5 md:mt-10'>
+        <p className='text-center text-opacity-70 text-sm md:text-base'>
+          Currently working on new website.
         </p>
-      </div>
+        <p className='text-center text-opacity-70 text-sm md:text-base w-full sm:w-[400px]'>
+          Enter your email and click "Notify Me!" to be ready for the Grand
+          Opening!
+        </p>
+      </div> */}
+      <form className='flex gap-2 flex-col items-center mt-5 md:mt-10'>
+        <input
+          type='email'
+          placeholder='Enter your email'
+          className='input input-bordered input-primary w-full md:w-[400px] focus:outline-none'
+          name='email'
+        />
+        <button className='btn btn-primary w-full md:w-[400px]'>
+          Notify Me!
+        </button>
+        <p className='text-center text-opacity-70 text-sm md:text-base w-full sm:w-[400px]'>
+          Enter your email and click "Notify Me!" to be ready for the Grand
+          Opening!
+        </p>
+      </form>
     </div>
   );
 };

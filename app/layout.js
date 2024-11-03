@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import './globals.css';
 
 export const metadata = {
@@ -7,9 +9,9 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang='en'>
-      <body>
-        <div className='overlay' />
+    <html lang='en' data-theme='nigth'>
+      <body className='flex justify-center items-center px-4 md:px-0'>
+        <Image src={'/assets/background.jpg'} alt='background' fill={true} />
         {children}
       </body>
     </html>
