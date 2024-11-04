@@ -11,7 +11,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang='en' data-theme='nigth'>
       <body className='flex justify-center items-center px-4 md:px-0'>
-        <Image src={'/assets/background.jpg'} alt='background' fill={true} />
+        <Image src={'/assets/bg.jpg'} alt='background' fill={true} />
         {children}
       </body>
     </html>
